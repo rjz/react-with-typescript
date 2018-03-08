@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/zakalwe/zakalwe.min.css" />
+    <style type="text/css">
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+button {
+  border: 1px solid #231f20;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  transition: all linear 0.2s;
+  width: 160px;
+  text-align: center;
+}
+
+button:focus {
+  outline:none;
+}
+
+button:active {
+  background-color:#1982d1;
+  border:1px solid #1982d1;
+  color:#fff;
+  transition: all linear 0.2s;
+}
+
+footer {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  right:0;
+}
+
+.example {
+  border: 1px dotted #231f20;
+  border-radius: 3px;
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+}
+
+.example h1 {
+  font-size: 1.3em;
+  margin: 0.4em auto;
+}
+
+.example h2 {
+  font-size: 0.8em;
+  margin: 0 0 2em;
+  text-transform: uppercase;
+}
+
+.example .pull-right {
+  border-bottom: 0;
+  border: 1px solid #231f20;
+  border-radius: 2px;
+  font-size: 0.8em;
+  padding: 0.1em 0.3em;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+</style>
+    <title>React with TypeScript</title>
+  </head>
+  <body>
+    <header>
+      <h1>React with TypeScript</h1>
+      <p>TypeScript implementations of familiar React.js patterns.</p>
+    </header>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="demo" id="root"></div>
+  <footer class="dark">
+    <section class="container copyright">
+      Another unrepentant production from
+      <a href="https://rjzaworski.com">rj zaworski</a>
+      &middot; <a href="https://github.com/rjz/react-with-typescript">Github</a>
+      <!-- :^) -->
+    </section>
+  </footer>
+
+  </body>
+</html>
