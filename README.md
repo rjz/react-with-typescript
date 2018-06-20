@@ -5,10 +5,10 @@
 
 ## Examples
 
-- [Context API](./context/)
-- [Higher-order component](./higher-order-component/)
-- [Reducer component](./reducer-component/)
-- [Render props](./render-props/)
+- [Context API](./src/examples/context/)
+- [Higher-order component](./src/examples/higher-order-component/)
+- [Reducer component](./src/examples/reducer-component/)
+- [Render props](./src/examples/render-props/)
 
 Also,
 
@@ -32,5 +32,9 @@ request!
 ## License
 
 ISC
+
+<p align="center">
+  <img src="public/react-typescript.svg" width="128" />
+</p>
 
 [ts-react-redux]: https://github.com/rjz/typescript-react-redux
