@@ -4,22 +4,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/react": "^16.0.40",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "@types/react": "^16.4.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-scripts-ts": "^2.14.0",
-    "zakalwe": "^1.0.6"
+    "zakalwe": "^1.0.10"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.1.9",
+    "@types/enzyme": "^3.1.11",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jest": "^22.2.0",
-    "@types/node": "^9.4.6",
+    "@types/node": "^9.6.22",
     "@types/react-dom": "^16.0.4",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
-    "typescript": "^2.7.2"
+    "typescript": "^2.9.2"
   },
   "author": "RJ Zaworski <rj@rjzaworski.com> (https://rjzaworski.com)",
   "scripts": {
@@ -34,7 +34,7 @@
   },
   "jest": {
     "snapshotSerializers": [
-      "enzyme-to-json"
+      "enzyme-to-json/serializer"
     ]
   }
 }
