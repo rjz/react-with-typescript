@@ -2,29 +2,25 @@ import * as React from 'react';
 
 import CounterContext from './context';
 
-type CountProps = {
-  increment(n: number): void,
-};
-
 // `Count` receives its state from a context `Consumer`
-const Count: React.SFC<CountProps> = ({ increment }) => (
+export const Count: React.SFC<{}> = () => (
   <CounterContext.Consumer>
-    {({ count }) => (
+    {({ count, updateCount }) => (
       <div>
         <h1>Count: {count}</h1>
-        <button onClick={() => increment(1)}>+1</button>
-        <button onClick={() => increment(-1)}>-1</button>
+        <button onClick={() => updateCount(1)}>+1</button>
+        <button onClick={() => updateCount(-1)}>-1</button>
       </div>
     )}
   </CounterContext.Consumer>
 );
 
-type CounterState = {
+type ContainerState = {
   count: number,
 };
 
 // `Container` acts as a state container and context `Provider`
-class Container extends React.Component<{}, CounterState> {
+class Container extends React.Component<{}, ContainerState> {
   readonly state = {
     count: 43,
   };
@@ -35,8 +31,13 @@ class Container extends React.Component<{}, CounterState> {
 
   render() {
     return (
-      <CounterContext.Provider value={this.state}>
-        <Count increment={this.increment} />
+      <CounterContext.Provider
+        value={{
+          count: this.state.count,
+          updateCount: this.increment,
+        }}
+      >
+        <Count />
       </CounterContext.Provider>
     );
   }
