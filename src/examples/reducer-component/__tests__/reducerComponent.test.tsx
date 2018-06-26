@@ -30,7 +30,7 @@ describe('examples/reducerComponent', () => {
 
   describe('.send', () => {
     it('updates parent state', () => {
-      const wrapper = shallow(<Ticker />);
+      const wrapper = shallow<{}, State>(<Ticker />);
       const child = wrapper.find(TickerView);
       child.props().send('TIC');
       expect(wrapper.state().count).toEqual(43);
