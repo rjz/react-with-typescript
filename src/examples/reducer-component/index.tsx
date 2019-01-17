@@ -1,11 +1,8 @@
 import * as React from 'react';
+
+import reducer, { Action, State } from '../reducer';
+
 import * as RC from './reducerComponent';
-
-type Action = 'INCREMENT' | 'DECREMENT';
-
-type State = {
-  count: number,
-};
 
 const Counter: RC.Component<Action, State> = ({ count, send }) => (
   <div>
@@ -17,19 +14,4 @@ const Counter: RC.Component<Action, State> = ({ count, send }) => (
   </div>
 );
 
-const reduce: RC.Reducer<Action, State> = (state, action) => {
-  switch (action) {
-    case 'INCREMENT':
-      return { count: state.count + 1 };
-    case 'DECREMENT':
-      return { count: state.count - 1 };
-    default:
-      return state;
-  }
-};
-
-const initialState: State = {
-  count: 42
-};
-
-export default RC.make(reduce, initialState)(Counter);
+export default RC.make(reducer, { count: 0 })(Counter);

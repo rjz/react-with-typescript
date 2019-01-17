@@ -3,12 +3,14 @@ import * as ReactDOM from 'react-dom';
 import ReducerComponent from './examples/reducer-component';
 import HigherOrderComponent from './examples/higher-order-component';
 import RenderPropsComponent from './examples/render-props';
+import HookEffectComponent from './examples/hook-effect';
+import HookReducerComponent from './examples/hook-reducer';
 import ContextComponent from './examples/context';
 
 type ExampleProps = {
-  title: string,
-  link: string,
-  children: React.ReactNode,
+  title: string | React.ReactNode;
+  link: string;
+  children: React.ReactNode;
 };
 
 const srcUrl = (link: string) =>
@@ -17,10 +19,7 @@ const srcUrl = (link: string) =>
 const Example = (props: ExampleProps) => (
   <div className="example">
     <h2>{props.title}</h2>
-    <a
-      className="pull-right"
-      href={srcUrl(`examples/${props.link}`)}
-    >
+    <a className="pull-right" href={srcUrl(`examples/${props.link}`)}>
       src
     </a>
     {props.children}
@@ -29,6 +28,20 @@ const Example = (props: ExampleProps) => (
 
 ReactDOM.render(
   <div>
+    <Example
+      title={<><small>use</small>Effect() Component</>}
+      link="hook-effect"
+    >
+      <HookEffectComponent />
+    </Example>
+
+    <Example
+      title={<><small>use</small>Reducer() Component</>}
+      link="hook-reducer"
+    >
+      <HookReducerComponent/>
+    </Example>
+
     <Example title="Reducer Component" link="reducer-component">
       <ReducerComponent />
     </Example>
@@ -45,7 +58,6 @@ ReactDOM.render(
     <Example title="Render Props" link="render-props">
       <RenderPropsComponent />
     </Example>
-
   </div>,
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 );

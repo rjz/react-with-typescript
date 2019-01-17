@@ -4,10 +4,10 @@ import { getDisplayName } from '../utils';
 type HOC<P, Q> = (C: React.ComponentType<P>) =>
   React.ComponentType<Q>;
 
-function loadable<P, Q>(predicate: (p: P) => boolean): HOC<Q, P> {
+function loadable<P>(predicate: (p: P) => boolean): HOC<P, P> {
   // Return a higher-order component implementing the "loadable" behavior
   // See: https://goo.gl/TxPPCw
-  return (C: React.ComponentType<Q>) => {
+  return (C: React.ComponentType<P>) => {
     const LoadableComponent: React.SFC<P> = (props: P) => {
       if (predicate(props)) {
         return <div>Just a moment, please...</div>;
