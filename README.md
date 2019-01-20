@@ -1,8 +1,8 @@
-# React with TypeScript
-
 <p align="center">
   <img src="public/react-typescript.svg" width="128" />
 </p>
+
+# React with TypeScript
 
 [TypeScript](https://www.typescriptlang.org/) sample implementations of familiar
 [React.js](http://reactjs.org) patterns.
