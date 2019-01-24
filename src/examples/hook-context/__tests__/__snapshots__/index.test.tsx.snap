@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`examples/context renders count 1`] = `"<div><h1>Count: 42</h1><button>+1</button><button>-1</button></div>"`;
