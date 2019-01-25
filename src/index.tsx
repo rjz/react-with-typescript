@@ -4,6 +4,7 @@ import ReducerComponent from './examples/reducer-component';
 import HigherOrderComponent from './examples/higher-order-component';
 import RenderPropsComponent from './examples/render-props';
 import HookEffectComponent from './examples/hook-effect';
+import HookContextComponent from './examples/hook-context';
 import HookReducerComponent from './examples/hook-reducer';
 import ContextComponent from './examples/context';
 
@@ -40,6 +41,13 @@ ReactDOM.render(
       link="hook-reducer"
     >
       <HookReducerComponent/>
+    </Example>
+
+    <Example
+      title={<><small>use</small>Context() Component</>}
+      link="hook-context"
+    >
+      <HookContextComponent/>
     </Example>
 
     <Example title="Reducer Component" link="reducer-component">

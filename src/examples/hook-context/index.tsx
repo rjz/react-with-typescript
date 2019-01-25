@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import CounterContext from "./context";
+import CounterContext from './context';
 
 // `Count` receives its state from a context `Consumer`
 export const Count: React.SFC<{}> = () => {
@@ -28,7 +28,7 @@ class Container extends React.Component<{}, ContainerState> {
   increment = (delta: number) =>
     this.setState({
       count: this.state.count + delta
-    });
+    })
 
   render() {
     return (
