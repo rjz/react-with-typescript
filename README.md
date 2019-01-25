@@ -7,6 +7,8 @@
 [TypeScript](https://www.typescriptlang.org/) sample implementations of familiar
 [React.js](http://reactjs.org) patterns.
 
+[![Build Status](https://travis-ci.org/rjz/react-with-typescript.svg?branch=master)](https://travis-ci.org/rjz/react-with-typescript)
+
 ## Examples
 
 - [`useEffect()` and `useState()` hooks](./src/examples/hook-effect/)
