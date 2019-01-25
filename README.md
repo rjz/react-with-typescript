@@ -10,6 +10,7 @@
 ## Examples
 
 - [`useEffect()` and `useState()` hooks](./src/examples/hook-effect/)
+- [`useContext()` hook](./src/examples/hook-context/)
 - [`useReducer()` hook](./src/examples/hook-reducer/)
 - [Context API](./src/examples/context/)
 - [Higher-order component](./src/examples/higher-order-component/)
