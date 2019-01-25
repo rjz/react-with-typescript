@@ -1,8 +1,15 @@
 {
-  "name": "typescript-react-reducer-component",
+  "name": "react-with-typescript",
   "license": "ISC",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "react",
+    "typescript",
+    "context",
+    "hooks",
+    "examples"
+  ],
   "dependencies": {
     "@types/react": "^16.7.20",
     "react": "^16.8.0-alpha.1",
