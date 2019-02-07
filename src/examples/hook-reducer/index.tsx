@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import reducer from '../reducer';
 
-const Counter: React.SFC<{}> = () => {
+function Counter() {
   const [state, dispatch] = React.useReducer(reducer, {count: 0});
 
   return (
@@ -14,6 +14,6 @@ const Counter: React.SFC<{}> = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Counter;
