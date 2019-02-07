@@ -12,8 +12,8 @@
   ],
   "dependencies": {
     "@types/react": "^16.7.20",
-    "react": "^16.8.0-alpha.1",
-    "react-dom": "^16.8.0-alpha.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-scripts-ts": "^4.0.8",
     "zakalwe": "^1.0.10"
   },
