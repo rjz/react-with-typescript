@@ -3,32 +3,21 @@
   "license": "ISC",
   "version": "0.1.0",
   "private": true,
-  "keywords": [
-    "react",
-    "typescript",
-    "context",
-    "hooks",
-    "examples"
-  ],
+  "keywords": ["react", "typescript", "context", "hooks", "examples"],
   "dependencies": {
-    "@types/react": "^16.7.20",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "^3.1.1",
     "react-scripts-ts": "^4.0.8",
     "zakalwe": "^1.0.10"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.1.15",
-    "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/jest": "^23.3.12",
-    "@types/node": "^10.12.18",
-    "@types/react-dom": "^16.0.11",
-    "@types/react-test-renderer": "^16.0.3",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
-    "react-test-renderer": "^16.7.0",
-    "typescript": "^3.2.2"
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-test-renderer": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "typescript": "^3.6.2"
   },
   "author": "RJ Zaworski <rj@rjzaworski.com> (https://rjzaworski.com)",
   "scripts": {
@@ -38,18 +27,6 @@
     "eject": "react-scripts-ts eject",
     "watch": "tsc --watch -p ./tsconfig.json"
   },
-  "resolutions": {
-    "@types/react": "^16.0.40"
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "jest": {},
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
